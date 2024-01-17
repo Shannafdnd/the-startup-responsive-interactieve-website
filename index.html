@@ -6,22 +6,33 @@
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="Android/styles/style.css">
     <meta http-equiv="content-security-policy" content="">
     <title>Team Android Triple</title>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="./assets/triple_logo-navy.png" alt="Triple logo">
+        <img src="Android/assets/triple_logo-navy.png" alt="Triple logo">
         <form>
-        <label for="language-selector">NL</label>
-            <select id="language-selector">
-                <option value="Nederlands">Nederlands</option>
-                <option value="English">English</option>
-            </select>
+        <select id="language-selector">
+            <option value="Nederlands">NL</option>
+            <option value="English">EN</option>
+        </select>
         </form>
-        <div class="hamburger-menu">
+        <nav class="nav-close">
+            <button class="close-nav-button"><i class='bx bx-x'></i></button>
+            <a>Vacatures</a>
+            <a>Over Ons</a>
+            <a>Expertises</a>
+            <a>Cultuur</a>
+            <a>Stages</a>
+            <a>Verhalen</a>
+            <a>Triple website</a>
+        </nav>
+        <button class="hamburger-menu">
             <svg height="12" width="18" viewBox="0 0 18 12"><path d="M0 12h18v-2H0v2Zm0-5h18V5H0v2Zm0-7v2h18V0H0Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
         </div>
     </header>
@@ -32,6 +43,26 @@
             <h1>Android</h1>
         </div>
         <h2>Android team</h2>
+        
+        <div class="gallery-container">
+            <div class="gallery">
+                <div class="image-container">
+                    <img class="item-a"></img>
+                    <img class="item-b"></img>
+                    <img class="item-c"></img>
+                    <img class="item-d"></img>
+                    <img class="item-e"></img>
+                    <img class="item-f"></img>
+                    <img class="item-g"></img>
+                    <img class="item-h"></img>
+                    <img class="item-i"></img>
+                </div>
+                <div class="button-container">
+                    <button class="scroll-button scroll-button-left">&lt;</button>
+                    <button class="scroll-button scroll-button-right">&gt;</button>
+                </div>
+            </div>
+        </div>
         <p>
             Als Android Developer kom je terecht op onze afdeling Development, dat bestaat uit zo’n 70 developers. Het team bestaat uit 12 specialisten, die zich volledig focussen op het ontwikkelen voor het Android-platform. Daarnaast werk je in een multidisciplinair team, dat bestaat uit designers, frontend- & backend developers, QA Engineers en een projectmanager, samen aan het platform van één of meerdere klanten.
         </p>
@@ -47,7 +78,7 @@
     </main>
 
     <footer>
-        <img src="./assets/triple-midnight.png" alt="Triple logo">
+        <img src="Android/assets/triple-midnight.png" alt="Triple logo">
         <a>Vacatures</a>
         <a>Over ons</a>
         <a>Cultuur</a>
