@@ -22,3 +22,13 @@ document.querySelector(".scroll-button-left").addEventListener("click", () => {
 document.querySelector(".scroll-button-right").addEventListener("click", () => {
     imageContainer.scrollLeft += 300;
 });
+
+// Language selector
+const languageSelector = document.getElementById("language-selector");
+languageSelector.addEventListener("change", () => {
+    if (languageSelector.value === "English") {
+        document.body.classList.add("en");
+    } else if (languageSelector.value === "Nederlands") {
+        document.body.classList.remove("en");
+    }
+})

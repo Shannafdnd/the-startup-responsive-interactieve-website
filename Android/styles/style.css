@@ -27,6 +27,18 @@ body {
     margin: 0;
 }
 
+.lang-en {
+    display: none;
+}
+
+body.en .lang-en {
+    display: unset;
+}
+
+body.en .lang-nl {
+    display: none;
+}
+
 h1 {
     margin: 0;
     font-family: cabinet-grotesk-extra-bold;
@@ -36,6 +48,11 @@ h1 {
 p {
     line-height: 1.6em;
     margin: 1.5rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 button {
@@ -178,10 +195,11 @@ main > h2 {
 .gallery > .image-container > * {
     background-color: lightblue;
     width: 300px;
-    height: 200px;
+    height: 300px;
 
     flex: 0 0 300px;
     scroll-snap-align: center;
+    object-fit: cover;
 }
 
 .gallery > .button-container {
@@ -190,6 +208,9 @@ main > h2 {
     gap: 10px;
 }
 
+section.text-container {
+    margin: 8rem 0;
+}
 
 /* FOOTER */
 
@@ -229,6 +250,7 @@ footer {
             position: unset;
             height: unset;
             width: unset;
+            padding-top: 0;
             z-index: unset;
             display: flex;
 
@@ -240,6 +262,10 @@ footer {
         .hamburger-menu {
             display: none
         }
+    }
+
+    p {
+        font-size: 20px;
     }
 }
 
@@ -298,5 +324,9 @@ footer {
 
     .item-i {
         grid-area: i;
+    }
+    
+    section.text-container {
+       padding: 0 4rem;
     }
 }
