@@ -210,6 +210,16 @@ main > h2 {
 
 section.text-container {
     margin: 8rem 0;
+
+    ul.no-list-style {
+        list-style-type: none;
+        padding: 0;
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
 }
 
 /* FOOTER */
